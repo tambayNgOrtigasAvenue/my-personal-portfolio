@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-portfolio-bg: #FFFFFF;
+  --color-portfolio-light: #D4D4D4;
+  --color-portfolio-medium: #B3B3B3;
+  --color-portfolio-dark: #2B2B2B;
+
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
