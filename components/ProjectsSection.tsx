@@ -40,6 +40,12 @@ const projects = [
     description: 'This aims to provide a hardware device that monitors a plant alerting an individual about the state whether it is dry or wet. The device monitors the plant base on the soil state, room humidity, and temperature.',
     image: '/img/img-projects/plant-monitoring-arduino.png',
   },
+  {
+    id: 7,
+    title: 'Commute Manila',
+    description: 'A modern mobile application for easy and efficient travel around Metro Manila. Plan your routes, find the fastest way, and get real-time updates with ease.',
+    image: '/img/img-projects/commute-manila.png',
+  }
 ];
 
 export function ProjectsSection() {
