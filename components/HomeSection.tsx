@@ -38,10 +38,10 @@ export function HomeSection() {
               Hi, I&apos;m <span className="text-portfolio-medium">Mark Kengie Aldabon</span>
             </h1>
             <h2 className="text-xl md:text-2xl font-medium text-portfolio-dark/80 mb-6">
-              Aspiring Cloud Engineer / Backend Developer / IT Student / AI Enthusiast
+              Aspiring System Administrator & Cloud Developer / IT Student / AI Enthusiast
             </h2>
             <p className="text-base md:text-lg text-portfolio-dark/70 leading-relaxed mb-8">
-              I am a passionate IT student with a strong interest in cloud computing, software development, and artificial intelligence. I am constantly learning and growing to become a skilled professional in the tech industry.
+              I am a passionate IT student with a strong interest in Systems Administration, Cloud Computing, and AI.
             </p>
             <div className="flex gap-4">
               <a

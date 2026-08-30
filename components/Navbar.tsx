@@ -19,7 +19,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Projects', href: '#projects' },    
+    { name: 'Projects', href: '#projects' },
     { name: 'Skills & Tools', href: '#skills' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -40,7 +40,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
             <Link href="#home" onClick={(e) => handleLinkClick(e, '#home')} className="text-xl font-bold tracking-tighter text-portfolio-dark">
-              PORTFOLIO
+              PORTFOLIO by kamuning
             </Link>
           </div>
 

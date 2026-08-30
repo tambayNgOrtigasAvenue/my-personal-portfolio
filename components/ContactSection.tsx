@@ -136,6 +136,8 @@ export function ContactSection() {
                   <input
                     type="email"
                     id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="w-full px-4 py-3 bg-portfolio-bg border border-portfolio-light rounded-none focus:outline-none focus:border-portfolio-medium focus:ring-1 focus:ring-portfolio-medium transition-colors text-portfolio-dark placeholder:text-portfolio-medium"
                     placeholder="john@example.com"
                     required
@@ -148,6 +150,8 @@ export function ContactSection() {
                 <input
                   type="text"
                   id="subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                   className="w-full px-4 py-3 bg-portfolio-bg border border-portfolio-light rounded-none focus:outline-none focus:border-portfolio-medium focus:ring-1 focus:ring-portfolio-medium transition-colors text-portfolio-dark placeholder:text-portfolio-medium"
                   placeholder="How can I help you?"
                   required
@@ -159,6 +163,8 @@ export function ContactSection() {
                 <textarea
                   id="message"
                   rows={5}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full px-4 py-3 bg-portfolio-bg border border-portfolio-light rounded-none focus:outline-none focus:border-portfolio-medium focus:ring-1 focus:ring-portfolio-medium transition-colors text-portfolio-dark placeholder:text-portfolio-medium resize-none"
                   placeholder="Your message here..."
                   required

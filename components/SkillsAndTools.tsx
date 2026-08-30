@@ -1,15 +1,29 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { Server, Database, Code2, Wrench, CheckCircle2, Cloud } from 'lucide-react';
+import { Server, Database, Code2, Wrench, CheckCircle2, Cloud, Computer } from 'lucide-react';
 
 const skillCategories = [
   {
-    id: 'backend',
-    title: 'Backend Development',
-    icon: Server,
-    description: 'Server-side logic, API development, and architecture.',
-    skills: ['Next.js', 'Laravel', 'PHP', 'RESTful APIs', 'Authentication'],
+    id: 'sysadmin',
+    title: 'Systems & Infrastructure',
+    icon: Computer,
+    description: 'System administration, network configuration, and hardware maintenance.',
+    skills: ['Windows', 'Windows Server', 'Networking', 'Hardware', 'Software', 'Troubleshooting'],
+  },
+  {
+    id: 'cloud',
+    title: 'Cloud Services',
+    icon: Cloud,
+    description: 'Currently exploring and utilizing cloud services including S3, EC2, Lambda, and more.',
+    skills: ['AWS', 'S3', 'EC2', 'Lambda', 'Azure'],
+  },
+  {
+    id: 'tools',
+    title: 'DevOps and Deployments',
+    icon: Wrench,
+    description: 'Development, deployment, and version control tools.',
+    skills: ['Git', 'GitHub', 'Docker', 'Terraform', 'GitHub Actions'],
   },
   {
     id: 'database',
@@ -19,25 +33,18 @@ const skillCategories = [
     skills: ['MySQL', 'PostgreSQL', 'Supabase', 'Database Design'],
   },
   {
+    id: 'backend',
+    title: 'Backend Development',
+    icon: Server,
+    description: 'Server-side logic, API development, and architecture.',
+    skills: ['Next.js', 'Laravel', 'PHP', 'RESTful APIs', 'Authentication'],
+  },
+  {
     id: 'languages',
     title: 'Languages',
     icon: Code2,
     description: 'Core programming and scripting languages.',
     skills: ['TypeScript', 'PHP'],
-  },
-  {
-    id: 'tools',
-    title: 'Tools & Platforms',
-    icon: Wrench,
-    description: 'Development, deployment, and version control tools.',
-    skills: ['Git', 'GitHub', 'Docker', 'Postman', 'VS Code'],
-  },
-  {
-    id: 'cloud',
-    title: 'Cloud Services',
-    icon: Cloud,
-    description: 'Currently exploring and utilizing cloud services including S3, EC2, Lambda, and more.',
-    skills: ['AWS', 'S3', 'EC2', 'Lambda', 'Cloud Services'],
   }
 ];
 
@@ -78,10 +85,10 @@ export function SkillsAndTools() {
                   <h3 className="text-xl font-bold text-portfolio-dark">{category.title}</h3>
                 </div>
                 <p className="text-portfolio-dark/70 text-sm mb-6">{category.description}</p>
-                
+
                 <div className="flex flex-wrap gap-3">
                   {category.skills.map((skill) => (
-                    <div 
+                    <div
                       key={skill}
                       className="flex items-center gap-2 px-3 py-1.5 bg-portfolio-light/20 border border-portfolio-light rounded-full text-sm font-medium text-portfolio-dark"
                     >
